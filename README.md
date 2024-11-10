@@ -24,4 +24,7 @@
 
 - go run main.go peer3 :6002
 
-5. **Type Get in the terminals to enter critical section (note we have added a 10 second delay in the critical section)**
+5. **Note it is important that the peers name and port follow these exact names and that all three peers are started before continuing to the next step**
+
+6. **Type "get" in the terminals to enter critical section (note we have added a 10 second delay in the critical section)**
+
