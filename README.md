@@ -12,15 +12,15 @@
 
 1. **Clone the Repository:**
 
-2. **start peer1 node (In terminal):**
+2. **Start peer1 node (In terminal):**
 
 - go run main.go peer1 :5000
 
-3. **start peer2 node (In a different terminal):**
+3. **Start peer2 node (In a different terminal):**
 
 - go run main.go peer2 :5001
 
-4. **start peer3 node (In a different terminal):**
+4. **Start peer3 node (In a different terminal):**
 
 - go run main.go peer3 :5002
 
