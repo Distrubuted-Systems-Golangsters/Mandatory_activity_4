@@ -14,9 +14,9 @@ type PeerInfo struct {
 }
 
 var peersList = []PeerInfo{
-	{name: "peer1", port: ":5000"},
-	{name: "peer2", port: ":5001"},
-	{name: "peer3", port: ":5002"},
+	{name: "peer1", port: ":6000"},
+	{name: "peer2", port: ":6001"},
+	{name: "peer3", port: ":6002"},
 }
 
 type PeerConnection struct {
