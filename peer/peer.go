@@ -49,9 +49,9 @@ func (peer *Peer) StartApp() string {
 		if err != nil {
 			log.Fatalf("Failed to read from console: %v\n", err)
 		}
-		enteredString = strings.Trim(enteredString, "\r\n")
+		enteredString = strings.ToLower(strings.Trim(enteredString, "\r\n"))
 
-		if enteredString == "Get" {
+		if enteredString == "get" {
 			peer.requestAccessToCritical()
 		}
 	}
