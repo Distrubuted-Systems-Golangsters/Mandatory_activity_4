@@ -1,3 +1,3 @@
-//go:generate protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative grpc/peer.proto
+//go:generate protoc -I ../grpc --go_out=../grpc --go_opt=paths=source_relative --go-grpc_out=../grpc --go-grpc_opt=paths=source_relative ../grpc/peer.proto
 
 package generate
