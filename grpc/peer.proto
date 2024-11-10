@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option go_package = "concensus/grpc";
+
+package grpc;
+
+service PeerService {
+    rpc RequestAccessFromPeers(AccessRequest) returns (AccessResponse) {};
+}
+
+message AccessRequest {
+    string name = 1;
+    int64 timestamp = 2;
+}
+
+message AccessResponse {
+    bool allowAccess = 1;
+}
