@@ -6,7 +6,7 @@ import (
 	"sync"
 )
 
-var peerState = PeerState{ timestamp: 0, state: "Released", cond: sync.NewCond(&sync.Mutex{}) }
+var peerState = NewPeerState() 
 
 type PeerState struct {
 	timestamp int64
