@@ -52,6 +52,7 @@ func (peer *Peer) StartApp() string {
 		enteredString = strings.ToLower(strings.Trim(enteredString, "\r\n"))
 
 		if enteredString == "get" {
+			log.Printf("Requesting access to Critical Section\n")
 			peer.requestAccessToCritical()
 		}
 	}
